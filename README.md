@@ -9,19 +9,23 @@ Modified Baileys with single auto-join newsletter (120363424873368238@newsletter
 </div>
 --- 
 
-## Usage
+## Installation (via GitHub)
 ```json
-"depencies": {
-  "@zeppeliorg/wbails": "latest"
-  // or "@whiskeysocket/baileys": "npm:@zeppeliorg/wbails"
+"dependencies": {
+  "@whiskeysockets/baileys": "github:Kurniaharun/Bailysss"
 }
+```
+
+Or
+```bash
+npm install github:Kurniaharun/Bailysss
 ```
 ## Import
 ```javascript
 const {
   default: makeWASocket,
   // Other functionz
-} = require('@zeppeliorg/wbails');
+} = require('@whiskeysockets/baileys');
 ```
 
 ---
@@ -31,7 +35,7 @@ const {
 const {
   default: makeWASocket,
   Browsers
-} = require('@zeppeliorg/wbails');
+} = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
   browser: Browsers.ubuntu('Chrome'),
@@ -45,7 +49,7 @@ const {
   default: makeWASocket,
   fetchLatestWAWebVersion,
   Browsers
-} = require('@zeppeliorg/wbails');
+} = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
   browser: Browsers.ubuntu('Chrome'),
@@ -66,7 +70,7 @@ console.log("Ur pairing code : " + code)
 const {
   default: makeWASocket,
   makeInMemoryStore
-} = require('@zeppeliorg/wbails');
+} = require('@whiskeysockets/baileys');
 const pino = require('pino');
 
 const store = makeInMemoryStore({
